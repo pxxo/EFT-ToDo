@@ -29,6 +29,7 @@ h2 {
 }
 
 .left-section {
+    position: fixed;
     float: left;
     width: 50%;
 }
