@@ -293,3 +293,9 @@ for (let i = 225; i < 244; i++) {
     document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/PROVISIONS/food/itemimg" + String(i) + ".gif)";
     document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/PROVISIONS/food/itemimg" + String(i) + ".gif)";
 }
+
+//RESPONSIVE
+console.log(screen.width);
+if (screen.width <= 650) {
+    alert("650px以下の端末では表示できません。650px以上の端末をご利用ください。");
+}

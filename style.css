@@ -237,3 +237,9 @@ p {
     transition: .5s;
     opacity: 1;
 }
+
+@media screen and (max-width:650px) {
+    body {
+        display: none;
+    }
+}
