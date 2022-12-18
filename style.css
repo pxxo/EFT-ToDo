@@ -83,6 +83,18 @@ p {
     margin-left: 20px;
 }
 
+.medication01,
+.medication02,
+.medication03,
+.medication04 {
+    margin-left: 20px;
+}
+
+.provisions01,
+.provisions02 {
+    margin-left: 20px;
+}
+
 .item {
     zoom: 90%;
     margin: 0px 2px 0px 2px;

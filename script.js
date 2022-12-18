@@ -1,5 +1,5 @@
 //INVENTRY
-for (let i = 1; i < 171; i++) {
+for (let i = 1; i < 244; i++) {
     var inventry_div = document.createElement('div');                           //div生成
     inventry_div.className = "additem additem" + String(i);                     //class付与
     document.getElementById('inventry-items').appendChild(inventry_div);        //inventry-itemsにdivを挿入
@@ -8,7 +8,7 @@ for (let i = 1; i < 171; i++) {
 }
 
 //STASH
-
+//ここより下はdiv生成script
 //Part01//
 //others01
 for (let i = 1; i < 21; i++) {
@@ -86,9 +86,59 @@ for (let i = 150; i < 171; i++) {
 }
 
 //Part02//
+//medication01
+for (let i = 171; i < 186; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('medication01').appendChild(stash_div);             //medication01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//medication02
+for (let i = 186; i < 197; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('medication02').appendChild(stash_div);             //medication02にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//medication03
+for (let i = 197; i < 203; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('medication03').appendChild(stash_div);             //medication03にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//medication04
+for (let i = 203; i < 206; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('medication04').appendChild(stash_div);             //medication04にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+
+//Part03//
+//Provisions01
+for (let i = 206; i < 225; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('provisions01').appendChild(stash_div);             //Provisions01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//Provisions02
+for (let i = 225; i < 244; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('provisions02').appendChild(stash_div);             //Provisions02にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
 
 
-
+//INVENTRYの画像表示切り替え
 function clicked(e) {
     let targetid = e.target.id;
     console.log(targetid);
@@ -113,7 +163,8 @@ function clicked(e) {
 //     select_audio.play();
 // }
 
-for (let i = 1; i < 171; i++) {
+//アイテムのクリックの監視
+for (let i = 1; i < 244; i++) {
     var defaultlistener = "item" + String(i);
     var addlistener = "additem" + String(i);
     // document.getElementById(defaultlistener).addEventListener('mouseover', playAudio, false);
@@ -161,6 +212,8 @@ document.getElementById('tab02').addEventListener('click', changedisplay02, fals
 document.getElementById('tab03').addEventListener('click', changedisplay03, false);
 document.getElementById('tab04').addEventListener('click', changedisplay04, false);
 
+//ここより下は画像挿入script
+//Part01
 // OTHERS
 for (let i = 1; i < 21; i++) {
     document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/01others/itemimg" + String(i) + ".gif)";
@@ -205,4 +258,38 @@ for (let i = 132; i < 150; i++) {
 for (let i = 150; i < 171; i++) {
     document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/09valuables/itemimg" + String(i) + ".gif)";
     document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/09valuables/itemimg" + String(i) + ".gif)";
+}
+
+//Part02
+// medication01
+for (let i = 171; i < 186; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/MEDICATION/injectors/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/MEDICATION/injectors/itemimg" + String(i) + ".gif)";
+}
+// medication02
+for (let i = 186; i < 197; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/MEDICATION/injury_treatment/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/MEDICATION/injury_treatment/itemimg" + String(i) + ".gif)";
+}
+// medication03
+for (let i = 197; i < 203; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/MEDICATION/medkits/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/MEDICATION/medkits/itemimg" + String(i) + ".gif)";
+}
+// medication04
+for (let i = 203; i < 206; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/MEDICATION/pills/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/MEDICATION/pills/itemimg" + String(i) + ".gif)";
+}
+
+//Part03
+// provisions01
+for (let i = 206; i < 225; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/PROVISIONS/drinks/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/PROVISIONS/drinks/itemimg" + String(i) + ".gif)";
+}
+// provisions02
+for (let i = 225; i < 244; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/PROVISIONS/food/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/PROVISIONS/food/itemimg" + String(i) + ".gif)";
 }
