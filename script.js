@@ -1,5 +1,5 @@
 //INVENTRY
-for (let i = 1; i < 244; i++) {
+for (let i = 1; i < 521; i++) {
     var inventry_div = document.createElement('div');                           //div生成
     inventry_div.className = "additem additem" + String(i);                     //class付与
     document.getElementById('inventry-items').appendChild(inventry_div);        //inventry-itemsにdivを挿入
@@ -137,6 +137,87 @@ for (let i = 225; i < 244; i++) {
     get_class[0].setAttribute("id", "item" + String(i));                        //id付与
 }
 
+//Part04//
+//Gear01
+for (let i = 244; i < 274; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('gear01').appendChild(stash_div);                   //Provisions01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//Gear02
+for (let i = 274; i < 298; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('gear02').appendChild(stash_div);                   //Provisions01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//Gear03
+for (let i = 298; i < 314; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('gear03').appendChild(stash_div);                   //Provisions01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//Gear04
+for (let i = 314; i < 344; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('gear04').appendChild(stash_div);                   //Provisions01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//Gear05
+for (let i = 344; i < 382; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('gear05').appendChild(stash_div);                   //Provisions01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//Gear06
+for (let i = 382; i < 453; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('gear06').appendChild(stash_div);                   //Provisions01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//Gear07
+for (let i = 453; i < 462; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('gear07').appendChild(stash_div);                   //Provisions01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//Gear08
+for (let i = 462; i < 464; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('gear08').appendChild(stash_div);                   //Provisions01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//Gear09
+for (let i = 464; i < 486; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('gear09').appendChild(stash_div);                   //Provisions01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
+//Gear10
+for (let i = 486; i < 521; i++) {
+    var stash_div = document.createElement('div');                              //div生成
+    stash_div.className = "item item" + String(i);                              //class付与
+    document.getElementById('gear10').appendChild(stash_div);                   //Provisions01にdivを挿入
+    var get_class = document.getElementsByClassName('item' + String(i));        //class取得
+    get_class[0].setAttribute("id", "item" + String(i));                        //id付与
+}
 
 //INVENTRYの画像表示切り替え
 function clicked(e) {
@@ -164,7 +245,7 @@ function clicked(e) {
 // }
 
 //アイテムのクリックの監視
-for (let i = 1; i < 244; i++) {
+for (let i = 1; i < 521; i++) {
     var defaultlistener = "item" + String(i);
     var addlistener = "additem" + String(i);
     // document.getElementById(defaultlistener).addEventListener('mouseover', playAudio, false);
@@ -197,15 +278,14 @@ function changedisplay03() {
     items_part02.style.display = "none";
     items_part03.style.display = "block";
     items_part04.style.display = "none";
-
 }
 function changedisplay04() {
     items_part01.style.display = "none";
     items_part02.style.display = "none";
     items_part03.style.display = "none";
     items_part04.style.display = "block";
-
 }
+
 //タブをクリックされたかを監視
 document.getElementById('tab01').addEventListener('click', changedisplay01, false);
 document.getElementById('tab02').addEventListener('click', changedisplay02, false);
@@ -293,6 +373,61 @@ for (let i = 225; i < 244; i++) {
     document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/PROVISIONS/food/itemimg" + String(i) + ".gif)";
     document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/PROVISIONS/food/itemimg" + String(i) + ".gif)";
 }
+
+//Part04
+// gear01
+for (let i = 244; i < 274; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear01/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear01/itemimg" + String(i) + ".gif)";
+}
+// gear02
+for (let i = 274; i < 298; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear02/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear02/itemimg" + String(i) + ".gif)";
+}
+// gear03
+for (let i = 298; i < 314; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear03/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear03/itemimg" + String(i) + ".gif)";
+}
+// gear04
+for (let i = 314; i < 344; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear04/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear04/itemimg" + String(i) + ".gif)";
+}
+// gear05
+for (let i = 344; i < 382; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear05/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear05/itemimg" + String(i) + ".gif)";
+}
+// gear06
+for (let i = 382; i < 453; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear06/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear06/itemimg" + String(i) + ".gif)";
+}
+// gear07
+for (let i = 453; i < 462; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear07/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear07/itemimg" + String(i) + ".gif)";
+}
+// gear08
+for (let i = 462; i < 464; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear08/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear08/itemimg" + String(i) + ".gif)";
+}
+// gear09
+for (let i = 464; i < 486; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear09/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear09/itemimg" + String(i) + ".gif)";
+}
+// gear10
+for (let i = 486; i < 521; i++) {
+    document.getElementById('item' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear10/itemimg" + String(i) + ".gif)";
+    document.getElementById('additem' + String(i)).style.backgroundImage = "url(item_img/GEAR/gear10/itemimg" + String(i) + ".gif)";
+}
+
+
+
 
 //RESPONSIVE
 console.log(screen.width);

@@ -6,7 +6,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-image: url("img/background-color.jpg");
+    background-image: url("img/background.gif");
     background-size: cover;
     background-repeat: none;
     background-attachment: fixed;
@@ -15,8 +15,9 @@ body {
     color: rgb(192, 192, 192);
 }
 
+
 h2 {
-    margin: 0 0 0 10px;
+    font-size: 20px;
 }
 
 p {
@@ -30,7 +31,7 @@ p {
 
 .center-line {
     position: fixed;
-    background-color: #5a503b;
+    background-color: #646464;
     width: 5px;
     height: 100%;
     margin-left: 50%;
@@ -49,13 +50,23 @@ p {
 
 .section-title {
     text-align: center;
-    color: #5a503b;
+    color: #e0e0e0;
+    text-shadow:
+        0 0 0.10em #5267a3,
+        0 0 0.15em #5267a3,
+        0 0 0.80em #5267a3,
+        0 0 1.00em #5267a3;
 }
 
 .sub-section-title {
     text-align: left;
-    margin: 0 0 0 20px;
-    color: #5a503b;
+    margin: 10px 0 10px 20px;
+    color: #e0e0e0;
+    text-shadow:
+        0 0 0.10em #5267a3,
+        0 0 0.15em #5267a3,
+        0 0 0.80em #5267a3,
+        0 0 1.00em #5267a3;
 }
 
 .items {
@@ -68,6 +79,14 @@ p {
 }
 
 .items02 {
+    display: none;
+}
+
+.items03 {
+    display: none;
+}
+
+.items04 {
     display: none;
 }
 
@@ -95,11 +114,24 @@ p {
     margin-left: 20px;
 }
 
+.gear01,
+.gear02,
+.gear03,
+.gear04,
+.gear05,
+.gear06,
+.gear07,
+.gear08,
+.gear09,
+.gear10 {
+    margin-left: 20px;
+}
+
 .item {
     zoom: 90%;
     margin: 0px 2px 0px 2px;
     display: inline-block;
-    border: solid 2px #5a503b;
+    border: solid 2px #646464;
     width: 50px;
     height: 48px;
     background-color: rgb(255, 255, 255);
@@ -112,7 +144,7 @@ p {
     zoom: 80%;
     margin: 0px 2px 0px 2px;
     display: none;
-    border: solid 2px #5a503b;
+    border: solid 2px #646464;
     width: 50px;
     height: 48px;
     background-color: rgb(255, 255, 255);
@@ -178,6 +210,7 @@ p {
 
 .tab01:hover {
     width: 150px;
+    cursor: pointer;
 }
 
 .tab01:hover .tab-content01 {
@@ -195,6 +228,7 @@ p {
 
 .tab02:hover {
     width: 150px;
+    cursor: pointer;
 }
 
 .tab02:hover .tab-content02 {
@@ -212,6 +246,7 @@ p {
 
 .tab03:hover {
     width: 150px;
+    cursor: pointer;
 }
 
 .tab03:hover .tab-content03 {
@@ -229,6 +264,7 @@ p {
 
 .tab04:hover {
     width: 150px;
+    cursor: pointer;
 }
 
 .tab04:hover .tab-content04 {
@@ -236,6 +272,12 @@ p {
     transition-delay: 1s;
     transition: .5s;
     opacity: 1;
+}
+
+.tab-icon {
+    margin: 3px 0 3px 3px;
+    border-radius: 50%;
+    float: left;
 }
 
 @media screen and (max-width:650px) {
