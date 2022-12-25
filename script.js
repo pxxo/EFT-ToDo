@@ -260,30 +260,43 @@ let items_part01 = document.getElementById('items-part01');
 let items_part02 = document.getElementById('items-part02');
 let items_part03 = document.getElementById('items-part03');
 let items_part04 = document.getElementById('items-part04');
+let items_part05 = document.getElementById('items-part05');
 
 function changedisplay01() {
     items_part01.style.display = "block";
     items_part02.style.display = "none";
     items_part03.style.display = "none";
     items_part04.style.display = "none";
+    items_part05.style.display = "none";
 }
 function changedisplay02() {
     items_part01.style.display = "none";
     items_part02.style.display = "block";
     items_part03.style.display = "none";
     items_part04.style.display = "none";
+    items_part05.style.display = "none";
 }
 function changedisplay03() {
     items_part01.style.display = "none";
     items_part02.style.display = "none";
     items_part03.style.display = "block";
     items_part04.style.display = "none";
+    items_part05.style.display = "none";
 }
 function changedisplay04() {
     items_part01.style.display = "none";
     items_part02.style.display = "none";
     items_part03.style.display = "none";
     items_part04.style.display = "block";
+    items_part05.style.display = "none";
+}
+
+function changedisplay05() {
+    items_part01.style.display = "none";
+    items_part02.style.display = "none";
+    items_part03.style.display = "none";
+    items_part04.style.display = "none";
+    items_part05.style.display = "block";
 }
 
 //タブをクリックされたかを監視
@@ -291,6 +304,7 @@ document.getElementById('tab01').addEventListener('click', changedisplay01, fals
 document.getElementById('tab02').addEventListener('click', changedisplay02, false);
 document.getElementById('tab03').addEventListener('click', changedisplay03, false);
 document.getElementById('tab04').addEventListener('click', changedisplay04, false);
+document.getElementById('tab05').addEventListener('click', changedisplay05, false);
 
 //ここより下は画像挿入script
 //Part01
